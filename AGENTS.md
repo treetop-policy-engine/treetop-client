@@ -93,7 +93,7 @@ RUSTDOCFLAGS="-D warnings" cargo doc --no-deps --all-features
 
 ## Rust Standards
 
-- Follow idiomatic Rust and the repository's existing patterns. The declared MSRV is Rust 1.85;
+- Follow idiomatic Rust and the repository's existing patterns. The declared MSRV is Rust 1.93.1;
   do not use newer language or library features in package code unless the MSRV is intentionally
   raised everywhere in the same change.
 - Prefer validated newtypes with private fields, constructors, and accessors over unchecked

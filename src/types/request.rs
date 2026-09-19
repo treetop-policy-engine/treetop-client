@@ -288,16 +288,15 @@ impl AuthorizeRequest {
 
     /// Adds a pre-built authorization request after checking batch-wide invariants.
     pub fn add_auth_request(mut self, request: AuthRequest) -> Result<Self, ValidationError> {
-        if let Some(id) = request.id() {
-            if self
+        if let Some(id) = request.id()
+            && self
                 .requests
                 .iter()
                 .any(|existing| existing.id() == Some(id))
-            {
-                return Err(ValidationError::DuplicateRequestId {
-                    value: id.to_string(),
-                });
-            }
+        {
+            return Err(ValidationError::DuplicateRequestId {
+                value: id.to_string(),
+            });
         }
         self.requests.push(request);
         Ok(self)
@@ -325,12 +324,12 @@ impl AuthorizeRequest {
         let mut request_ids = HashSet::new();
         for request in &self.requests {
             request.validate()?;
-            if let Some(id) = request.id() {
-                if !request_ids.insert(id) {
-                    return Err(ValidationError::DuplicateRequestId {
-                        value: id.to_string(),
-                    });
-                }
+            if let Some(id) = request.id()
+                && !request_ids.insert(id)
+            {
+                return Err(ValidationError::DuplicateRequestId {
+                    value: id.to_string(),
+                });
             }
         }
         Ok(())
