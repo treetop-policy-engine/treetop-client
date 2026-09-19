@@ -43,3 +43,8 @@ and upgrading CLI consumers to its crates.io package.
 `VersionInfo.schema` now uses the distinct `SchemaVersion` type (`hash`,
 `loaded_at`). It does not manufacture policy generation or label metadata for a
 schema revision. REST and Core version strings are package versions without `v`.
+
+## Dependency refresh
+
+Upgrade the Rust toolchain to 1.93.1 or newer before updating the client. The
+refreshed dependency graph and `serial_test` 4 are verified on that minimum.

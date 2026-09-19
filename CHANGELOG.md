@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Breaking changes
+
+- Raise the minimum Rust version to 1.93.1 for the current dependency graph and
+  serial_test 4. Upgrade the Rust toolchain before updating the client.
+
+### Changed
+
+- Update HTTP/TLS, test, and fuzz dependencies and both lockfiles to current
+  stable releases. Refresh immutable GitHub Actions pins.
+
 ## [0.1.0] - 2026-09-06
 
 ### Breaking changes

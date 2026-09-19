@@ -5,7 +5,8 @@ Thank you for considering contributing to treetop-client.
 ## Getting started
 
 1. Fork the repository and clone your fork.
-2. Make sure you have Rust 1.85+ installed (`rustup update stable`).
+2. Use Rust 1.93.1+ to run the development and test suite (`rustup update stable`).
+   Rust 1.93.1 is the minimum for the library and development tooling.
 3. Run the local verification baseline below.
 
 ## Development workflow
