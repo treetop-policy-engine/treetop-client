@@ -7,12 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-03
+
 ### Breaking changes
 
 - Raise the minimum Rust version to 1.93.1 for the current dependency graph and
   serial_test 4. Upgrade the Rust toolchain before updating the client.
 
 ### Changed
+
+- Verify the existing strict JSON contract against REST 0.2.0 with Core/Bundle
+  0.3.0 using the immutable released server image.
 
 - Refresh the release dependency set, including thiserror, libc, both lockfiles,
   and reviewed immutable Action pins; retain Rust 1.93.1 support.
@@ -192,9 +197,11 @@ Targets
 - Tag-driven crates.io and GitHub release automation, including first-release token bootstrap and
   subsequent OIDC trusted publishing.
 
-[Unreleased]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.2.0...HEAD
 [0.1.0]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.0.4...v0.1.0
 [0.0.4]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/treetop-policy-engine/treetop-client/releases/tag/v0.0.3
 [0.0.2]: https://github.com/treetop-policy-engine/treetop-client/releases/tag/v0.0.2
 [0.0.1]: https://github.com/treetop-policy-engine/treetop-client/releases/tag/v0.0.1
+
+[0.2.0]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.1.0...v0.2.0

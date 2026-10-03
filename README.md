@@ -8,10 +8,10 @@ authorization requests, managing policies, and querying server status.
 
 ## Current contract
 
-Version 0.1.0 targets the coordinated REST 0.1.0 contract. Early releases prioritize
+Version 0.2.0 targets the coordinated REST 0.2.0 contract. Early releases prioritize
 correctness over compatibility: deprecated APIs, legacy endpoint methods, omitted
 metadata defaults, and old-server matrices are removed. See [MIGRATION.md](MIGRATION.md).
-CI runs the full endpoint suite against an immutable REST 0.1.0 release image.
+CI runs the full endpoint suite against an immutable REST 0.2.0 release image.
 
 ## Features
 
@@ -30,11 +30,13 @@ CI runs the full endpoint suite against an immutable REST 0.1.0 release image.
 
 ## Installation
 
+Rust 1.93.1 or newer is required.
+
 Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-treetop-client = "0.1.0"
+treetop-client = "0.2.0"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 ```
 
@@ -286,7 +288,7 @@ println!("OpenAPI version: {}", openapi["openapi"]);
 ### Request context
 
 Request-scoped context is serialized on the wire via `AuthRequest.context` and evaluated by
-`treetop-rest 0.1.0`. The client automatically enforces `RequestLimits::default()` before
+`treetop-rest 0.2.0`. The client automatically enforces `RequestLimits::default()` before
 transport; configure limits reported by a differently configured server with
 `ClientBuilder::request_limits()`.
 

@@ -4,7 +4,7 @@ This document describes the exact JSON wire format for all request and response
 types exchanged between `treetop-client` and a Treetop REST server. Use this as
 a reference when debugging or building interoperable clients.
 
-The complete endpoint suite targets the coordinated REST 0.1.0 contract and tests
+The complete endpoint suite targets the coordinated REST 0.2.0 contract and tests
 an immutable release image. All policy-version fields and
 current status capabilities are required; old-server defaults are removed.
 
