@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Refresh the release dependency set, including thiserror, libc, both lockfiles,
+  and reviewed immutable Action pins; retain Rust 1.93.1 support.
+
 - Update HTTP/TLS, test, and fuzz dependencies and both lockfiles to current
   stable releases. Refresh immutable GitHub Actions pins.
 
