@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-25
+
 ### Changed
 
 - Test live endpoints against the immutable REST 0.3.0 image with Core 0.4.0
@@ -203,7 +205,8 @@ Targets
 - Tag-driven crates.io and GitHub release automation, including first-release token bootstrap and
   subsequent OIDC trusted publishing.
 
-[Unreleased]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.2.0...v0.2.1
 [0.1.0]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.0.4...v0.1.0
 [0.0.4]: https://github.com/treetop-policy-engine/treetop-client/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/treetop-policy-engine/treetop-client/releases/tag/v0.0.3
