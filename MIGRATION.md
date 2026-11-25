@@ -1,5 +1,11 @@
 # Migration guide
 
+## Rust client 0.2.1 with REST 0.3.0
+
+Use Rust 1.93.1 or later. The live suite checks REST 0.3.0, Core 0.4.0,
+and Cedar 4.15.0 against the released container digest. Rebuild and re-sign
+policy archives with Bundle CLI 0.4.0 before deploying the server.
+
 ## Rust client 0.2.0 with REST 0.2.0
 
 Upgrade to Rust 1.93.1 or newer and set `treetop-client = "0.2.0"`.

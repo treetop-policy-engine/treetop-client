@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Test live endpoints against the immutable REST 0.3.0 image with Core 0.4.0
+  and Cedar 4.15.0.
 - Refresh the URL parser and HTTP transport dependencies in the SDK and fuzz lockfiles.
 
 ## [0.2.0] - 2026-10-03

@@ -16,9 +16,9 @@ async fn supported_server_contract() {
     assert!(!version.core.version.is_empty());
     assert!(!version.core.cedar.is_empty());
 
-    assert_eq!(version.version, "0.2.0");
-    assert_eq!(version.core.version, "0.3.0");
-    assert_eq!(version.core.cedar, "4.13.0");
+    assert_eq!(version.version, "0.3.0");
+    assert_eq!(version.core.version, "0.4.0");
+    assert_eq!(version.core.cedar, "4.15.0");
 
     ensure_policies(server).await;
     assert!(client.is_allowed(alice_view_photo()).await.unwrap());
