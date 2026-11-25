@@ -19,7 +19,7 @@ use treetop_client::{
 // Container image
 // ==========================================================================
 
-const DEFAULT_IMAGE: &str = "ghcr.io/treetop-policy-engine/treetop-rest:v0.2.0";
+const DEFAULT_IMAGE: &str = "ghcr.io/treetop-policy-engine/treetop-rest@sha256:69d8cde73510f0219a0359f5baa5cf049f98b8eab87148540e72ac385725c772";
 const IMAGE_ENV: &str = "TREETOP_TEST_IMAGE";
 const CONTAINER_PREFIX: &str = "treetop-test-";
 const TEST_LABEL_KEY: &str = "treetop-client.test";
