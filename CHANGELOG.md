@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Refresh the URL parser and HTTP transport dependencies in the SDK and fuzz lockfiles.
+
 ## [0.2.0] - 2026-10-03
 
 ### Breaking changes
