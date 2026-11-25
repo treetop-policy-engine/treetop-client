@@ -8,7 +8,7 @@ authorization requests, managing policies, and querying server status.
 
 ## Current contract
 
-Version 0.2.0 targets the coordinated REST 0.3.0 contract. Early releases prioritize
+Version 0.2.1 targets the coordinated REST 0.3.0 contract. Early releases prioritize
 correctness over compatibility: deprecated APIs, legacy endpoint methods, omitted
 metadata defaults, and old-server matrices are removed. See [MIGRATION.md](MIGRATION.md).
 CI runs the full endpoint suite against an immutable REST 0.3.0 release image.
@@ -36,7 +36,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-treetop-client = "0.2.0"
+treetop-client = "0.2.1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 ```
 
